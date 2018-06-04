@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+
+//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+//@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+//@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+html, body {
+    background-color: #f5f5f5;
+    height: 100%;
+    //removes the extra padding around the mat-toolbar
+    margin: 0;
+}
+
+@import '~@angular/material/theming';
+/* Plus imports for other components in your app. */
+
+$app-primary: (
+  50: #85accb,
+        100: #73a0c3,
+        200: #6194bc,
+        300: #4f88b4,
+        400: #467aa4,
+        500: #3e6d92,
+        600: #366080,
+        700: #2f526e,
+        800: #27455c,
+        900: #20384a,
+        A100: #96b8d3,
+        A200: #a8c4da,
+        A400: #bad0e2,
+        A700: #182a38,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$app-accent: (
+  50: #45565e,
+        100: #50636d,
+        200: #5a717c,
+        300: #657e8a,
+        400: #728b97,
+        500: #8097a2,
+        600: #9eafb8,
+        700: #acbbc3,
+        800: #bbc7cd,
+        900: #cad3d8,
+        A100: #9eafb8,
+        A200: #8fa3ad,
+        A400: #8097a2,
+        A700: #d9dfe3,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$primary: mat-palette($app-primary, 500, 700);
+$accent:  mat-palette($app-accent, 100, 700, 50);
+
+// The warn palette is optional (defaults to red).
+$warn:    mat-palette($mat-red, 600);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$theme: mat-light-theme($primary, $accent, $warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($theme);

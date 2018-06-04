@@ -1,0 +1,29 @@
+  .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+  
+    .mat-card {
+      margin: 0 16px 16px 0;
+      width: 700px;
+    }
+  
+    img {
+      background-color: gray;
+    }
+  }
+  
+  .demo-card-blue {
+    background-color: #b0becc;
+  
+    .mat-card-actions {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
