@@ -1,24 +1,21 @@
-<div fxLayout="column" class="sticky-footer">
+<div fxLayout="column" class="sticky-footer" id="top">
   <app-header></app-header>
 
   <mat-tab-group backgroundColor="primary">
     <mat-tab label="Overview">
       <app-overview></app-overview>
     </mat-tab>
-    <mat-tab label="Features">
+    <mat-tab label="Main Point 1">
       <app-features></app-features>
     </mat-tab>
-    <mat-tab label="Details">
-      <h1>Some more tab content</h1>
+    <mat-tab label="Main Point 2">
+      <app-features2></app-features2>
     </mat-tab>
-    <mat-tab label="Technology">
-      <h1>Some more tab content</h1>
-    </mat-tab>
-    <mat-tab label="FAQ">
-      <h1>Some more tab content</h1>
+    <mat-tab label="Main Point 3">
+      <app-features3></app-features3>
     </mat-tab>
   </mat-tab-group>
-
+  
   <!-- Make footer stick to the bottom -->
   <div fxFlex></div>
   

@@ -1,19 +1,21 @@
 <div class="container" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
   <mat-card>
-    Hello
+    Hello - This is a basic card
   </mat-card>
 
   <mat-card>
     <mat-card-title-group>
       <mat-card-title>Card with title</mat-card-title>
       <mat-card-subtitle>Subtitle</mat-card-subtitle>
-      <img mat-card-lg-image src="https://placekitten.com/g/600/200">
     </mat-card-title-group>
+    <mat-card-content>
+      <img src=".\assets\EPMEIC_Shield.png" width="64px" height="64px">
+      <p>Image code</p>
+    </mat-card-content>
   </mat-card>
 
   <mat-card>
-    <mat-card-subtitle>Subtitle</mat-card-subtitle>
-    <mat-card-title>Card with title and footer</mat-card-title>
+    <mat-card-title>Card with title and text</mat-card-title>
     <mat-card-content>
       <p>This is supporting text.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -21,18 +23,11 @@
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-    <mat-card-footer>
-      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-    </mat-card-footer>
   </mat-card>
 
   <mat-card>
     <mat-card-subtitle>Subtitle</mat-card-subtitle>
-    <mat-card-title>Card with title, footer, and inset-divider</mat-card-title>
+    <mat-card-title>Card with title, content, and inset-divider</mat-card-title>
     <mat-card-content>
       <p>This is supporting text.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -41,13 +36,12 @@
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </mat-card-content>
     <mat-divider [inset]="true"></mat-divider>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-    <mat-card-footer>
-      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-    </mat-card-footer>
+    <mat-card-content>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </mat-card-content>
   </mat-card>
 
   <mat-card>
@@ -62,17 +56,6 @@
     </mat-card-actions>
   </mat-card>
 
-  <mat-card>
-    <mat-card-header>
-      <img mat-card-avatar>
-      <mat-card-title>Header title</mat-card-title>
-      <mat-card-subtitle>Header subtitle</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angularjs.org/latest/img/washedout.png">
-    <mat-card-content>
-      <p>Here is some content</p>
-    </mat-card-content>
-  </mat-card>
 
   <mat-card class="example-card">
     <mat-card-header>
@@ -93,6 +76,7 @@
     </mat-card-actions>
   </mat-card>
 
+  <!-- Variety of commands are listed below-->
   <mat-card>
     <mat-card-title>List Card</mat-card-title>
     <mat-card-subtitle>Info About This Item</mat-card-subtitle>
@@ -135,4 +119,35 @@
       <button mat-button color="accent" class="text-upper">Edit</button>
     </mat-card-actions>
   </mat-card>
+  
+  <!-- Using a tab group can make displaying shorter subpoints-->
+  <mat-card>
+    <mat-card-title>Tabbed Card Example</mat-card-title>
+    <mat-tab-group>
+      <mat-tab label="Tab1">Content 1</mat-tab>
+      <mat-tab label="Tab2">Content 2</mat-tab>
+    </mat-tab-group>
+  </mat-card>
+
+  
+<!-- Videos (and pictures) can be embedded with or without a card -->  
+  <mat-card>
+    <mat-card-title>Embedded Video Example</mat-card-title>
+    <iframe width="650" height="335" src="https://www.youtube.com/embed/1xAouNtVieg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </mat-card>
+
+  
+<!-- Use the mat-list/mat-list-item names for making a list. The mat-icon command makes Material Icons display. 
+
+To see the names of icons go here: https://material.io/tools/icons/?style=baseline    
+-->
+  <mat-card>
+    <mat-card-title>Icon and List example</mat-card-title>
+    <mat-list>
+     <mat-list-item><mat-icon>home</mat-icon>Stuff</mat-list-item>
+     <mat-list-item><mat-icon>commute</mat-icon>Things</mat-list-item>
+    </mat-list>
+  </mat-card>  
+
+
 </div>
