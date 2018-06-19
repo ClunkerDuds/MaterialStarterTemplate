@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatDialogModule } from '@angular/material';
+import { MatExpansionModule } from "@angular/material/expansion";
 
 //Uncomment if using animations
 //import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -24,12 +25,14 @@ import { Features3Component } from './features3/features3.component';
     HeaderComponent,
     FeaturesComponent,
     Features2Component,
-    Features3Component
+    Features3Component,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    MatDialogModule,
+    MatExpansionModule
   ],
   providers: [
     //{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}

@@ -119,7 +119,7 @@
       <button mat-button color="accent" class="text-upper">Edit</button>
     </mat-card-actions>
   </mat-card>
-  
+
   <!-- Using a tab group can make displaying shorter subpoints-->
   <mat-card>
     <mat-card-title>Tabbed Card Example</mat-card-title>
@@ -129,25 +129,57 @@
     </mat-tab-group>
   </mat-card>
 
-  
-<!-- Videos (and pictures) can be embedded with or without a card -->  
+
+  <!-- Videos (and pictures) can be embedded with or without a card -->
   <mat-card>
     <mat-card-title>Embedded Video Example</mat-card-title>
-    <iframe width="650" height="335" src="https://www.youtube.com/embed/1xAouNtVieg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="650" height="335" src="https://www.youtube.com/embed/1xAouNtVieg?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+      allowfullscreen></iframe>
   </mat-card>
 
-  
-<!-- Use the mat-list/mat-list-item names for making a list. The mat-icon command makes Material Icons display. 
+
+  <!-- Use the mat-list/mat-list-item names for making a list. The mat-icon command makes Material Icons display. 
 
 To see the names of icons go here: https://material.io/tools/icons/?style=baseline    
 -->
   <mat-card>
     <mat-card-title>Icon and List example</mat-card-title>
     <mat-list>
-     <mat-list-item><mat-icon>home</mat-icon>Stuff</mat-list-item>
-     <mat-list-item><mat-icon>commute</mat-icon>Things</mat-list-item>
+      <mat-list-item>
+        <mat-icon>home</mat-icon>Stuff</mat-list-item>
+      <mat-list-item>
+        <mat-icon>commute</mat-icon>Things</mat-list-item>
     </mat-list>
-  </mat-card>  
+  </mat-card>
 
 
+  <!-- Expansion panel code, curent code requires the app component be lazy loaded -->
+  <mat-card>
+    <h2>Expansion Panel Example</h2>
+    <mat-accordion>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Lorem Ipsum</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut massa lobortis, ultrices metus quis, ultrices
+          justo. Proin suscipit, eros quis accumsan egestas, leo ipsum lobortis eros, eu viverra ipsum purus non libero.
+          Cras semper porta lacus ac mattis. Praesent condimentum, tellus non convallis congue, nulla libero sodales metus,
+          nec consectetur purus urna quis orci. Nullam hendrerit accumsan accumsan. Cras euismod leo metus, eu vehicula ex
+          ornare nec. Donec facilisis augue erat. Phasellus malesuada, ex congue efficitur gravida, erat nisi ultricies elit,
+          in dapibus orci est nec urna.</p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Lorem Ipsum</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut massa lobortis, ultrices metus quis, ultrices
+          justo. Proin suscipit, eros quis accumsan egestas, leo ipsum lobortis eros, eu viverra ipsum purus non libero.
+          Cras semper porta lacus ac mattis. Praesent condimentum, tellus non convallis congue, nulla libero sodales metus,
+          nec consectetur purus urna quis orci. Nullam hendrerit accumsan accumsan. Cras euismod leo metus, eu vehicula ex
+          ornare nec. Donec facilisis augue erat. Phasellus malesuada, ex congue efficitur gravida, erat nisi ultricies elit,
+          in dapibus orci est nec urna.</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card>
 </div>

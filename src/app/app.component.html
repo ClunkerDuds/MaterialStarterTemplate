@@ -3,22 +3,30 @@
 
   <mat-tab-group backgroundColor="primary">
     <mat-tab label="Overview">
-      <app-overview></app-overview>
+      <ng-template matTabContent>
+        <app-overview></app-overview>
+      </ng-template>
     </mat-tab>
     <mat-tab label="Main Point 1">
-      <app-features></app-features>
+      <ng-template matTabContent>
+        <app-features></app-features>
+      </ng-template>
     </mat-tab>
     <mat-tab label="Main Point 2">
-      <app-features2></app-features2>
+      <ng-template matTabContent>
+        <app-features2></app-features2>
+      </ng-template>
     </mat-tab>
     <mat-tab label="Main Point 3">
-      <app-features3></app-features3>
+      <ng-template matTabContent>
+        <app-features3></app-features3>
+      </ng-template>
     </mat-tab>
   </mat-tab-group>
-  
+
   <!-- Make footer stick to the bottom -->
   <div fxFlex></div>
-  
+
   <app-footer></app-footer>
 
 </div>
