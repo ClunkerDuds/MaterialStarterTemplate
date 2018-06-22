@@ -182,4 +182,18 @@ To see the names of icons go here: https://material.io/tools/icons/?style=baseli
       </mat-expansion-panel>
     </mat-accordion>
   </mat-card>
+  <mat-card>
+    <mat-card-title>Dialog box example (not working yet)</mat-card-title>
+    <button mat-raised-button (click)="openDialog()">Expand</button>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-title>Grid list example</mat-card-title>
+    <mat-grid-list cols="2" rowHeight="3:1">
+      <mat-grid-tile><img mat-card-img src="assets\EPMEIC_Shield.png"></mat-grid-tile>
+      <mat-grid-tile><button mat-raised-button>Click here</button></mat-grid-tile>
+      <mat-grid-tile>333333333333</mat-grid-tile>
+      <mat-grid-tile>4</mat-grid-tile>
+    </mat-grid-list>
+  </mat-card>
 </div>
